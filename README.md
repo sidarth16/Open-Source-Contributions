@@ -15,8 +15,10 @@
 Un-Register a printer class from the list of printers already registered with the slither object.
 
 
-- [Fixed typo #1705](https://github.com/crytic/slither/pull/1705)  
-Fixed misspelt msg.sender in the reentrancy-eth module
+- [#1705](https://github.com/crytic/slither/pull/1705)  [#2751](https://github.com/crytic/slither/pull/2751) ( *Fixed typo's* )
+    - [#1705](https://github.com/crytic/slither/pull/1705) - misspelt msg.sender in the reentrancy-eth module
+    -  [#2751](https://github.com/crytic/slither/pull/2751) - misspelt terms in function doc-strings
+
 
 ---
 
