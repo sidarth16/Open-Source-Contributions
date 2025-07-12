@@ -4,6 +4,13 @@
 
 ## Slither ([crytic-slither](https://github.com/crytic/slither))
 
+- [Enhancement #2753](https://github.com/crytic/slither/pull/2753)  
+This PR introduces a new method `is_returning_msg_sender()` in the Function class, enabling detection of Solidity functions that return `msg.sender`, either directly or through transitive variable aliasing.
+    - The newly added method `Function.is_returning_msg_sender()` returns True if:
+        - The function directly returns `msg.sender` , 
+        - The function returns a variable that was directly or transitively assigned from msg.sender
+
+
  - [Fixed Bug #2747](https://github.com/crytic/slither/pull/2748/)  
  Removes duplicate functions in ```get_msg_sender_checks``` to avoid repeated ```msg.sender``` condition nodes
 
