@@ -12,19 +12,19 @@ This PR introduces a new method `is_returning_msg_sender()` in the Function clas
         - The function returns a variable that was directly or transitively assigned from msg.sender
 
 
- - [Fixed Bug #2747](https://github.com/crytic/slither/pull/2748/)  
- Removes duplicate functions in ```get_msg_sender_checks``` to avoid repeated ```msg.sender``` condition nodes
+ - [Fix Bug #2747](https://github.com/crytic/slither/pull/2748/)  
+ Updates the logic in ```get_msg_sender_checks()```, removing duplicates & repeated ```msg.sender``` condition nodes
 
 
  - [Enhancement #1722](https://github.com/crytic/slither/pull/1722)  
- This function would be helpful to de-register a detector class from the list of detectors already registered with the slither object
+ Adds function that would be helpful to de-register a detector class from the list of detectors already registered with the slither object
 
 - [Enhancement #1724](https://github.com/crytic/slither/pull/1724)  
-Un-Register a printer class from the list of printers already registered with the slither object.
+Adds a function that Un-Register a printer class from the list of printers already registered with the slither object.
 
 
-- [#1705](https://github.com/crytic/slither/pull/1705)  [#2751](https://github.com/crytic/slither/pull/2751) ( *Fixed typo's* )
-    - [#1705](https://github.com/crytic/slither/pull/1705) - misspelt msg.sender in the reentrancy-eth module
+- [#1705](https://github.com/crytic/slither/pull/1705)  [#2751](https://github.com/crytic/slither/pull/2751) ( *Fix typo's* )
+    - [#1705](https://github.com/crytic/slither/pull/1705) - misspelt ```msg.sender``` in the reentrancy-eth module
     -  [#2751](https://github.com/crytic/slither/pull/2751) - misspelt terms in function doc-strings
 
 
@@ -32,9 +32,15 @@ Un-Register a printer class from the list of printers already registered with th
 
 ##  Cairo-Lang Book ([cairo-book](https://github.com/cairo-book/cairo-book))
 
--  [Issue #1191](https://github.com/cairo-book/cairo-book/pull/1191)   
+- [Enhancement #1193](https://github.com/cairo-book/cairo-book/pull/1193)  
+ Adds note on multiple derivable traits on structs
+
+-  [Enhancement #1191](https://github.com/cairo-book/cairo-book/pull/1191)   
 Adds a note under the "Matching Tuples" section to clarify that match on tuples currently supports only enums as tuple members. Removes redundant match arms in quiz questions.
 
-- [Issue #1190](https://github.com/crytic/slither/pull/1705)  
-Fixed incorrect usage of function names in quiz.
+- [Issue #1192](https://github.com/cairo-book/cairo-book/pull/1192)  
+Rephrase generics example sentence for clarity
+
+- [Issue #1190](https://github.com/cairo-book/cairo-book/pull/1190)  
+Fix incorrect usage of function names in quiz.
 
