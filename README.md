@@ -4,7 +4,7 @@
 
 ## Slither ([crytic-slither](https://github.com/crytic/slither))
 
-- [Enhancement #2753](https://github.com/crytic/slither/pull/2753)  
+- [Enhancement `#2753`](https://github.com/crytic/slither/pull/2753)  
 *(feat: Add Function module to detect functions returning msg.sender directly or via alias*)<br/>
 This PR introduces a new method `is_returning_msg_sender()` in the Function class, enabling detection of Solidity functions that return `msg.sender`, either directly or through transitive variable aliasing.
     - The newly added method `Function.is_returning_msg_sender()` returns True if:
@@ -12,20 +12,20 @@ This PR introduces a new method `is_returning_msg_sender()` in the Function clas
         - The function returns a variable that was directly or transitively assigned from msg.sender
 
 
- - [Fix Bug #2747](https://github.com/crytic/slither/pull/2748/)  
+ - [Fix Bug `#2747`](https://github.com/crytic/slither/pull/2748/)  
  Updates the logic in ```get_msg_sender_checks()```, removing duplicates & repeated ```msg.sender``` condition nodes
 
 
- - [Enhancement #1722](https://github.com/crytic/slither/pull/1722)  
+ - [Enhancement `#1722`](https://github.com/crytic/slither/pull/1722)  
  Adds function that would be helpful to de-register a detector class from the list of detectors already registered with the slither object
 
-- [Enhancement #1724](https://github.com/crytic/slither/pull/1724)  
+- [Enhancement `#1724`](https://github.com/crytic/slither/pull/1724)  
 Adds a function that Un-Register a printer class from the list of printers already registered with the slither object.
 
 
-- [#1705](https://github.com/crytic/slither/pull/1705)  [#2751](https://github.com/crytic/slither/pull/2751) ( *Fix typo's* )
-    - [#1705](https://github.com/crytic/slither/pull/1705) - misspelt ```msg.sender``` in the reentrancy-eth module
-    -  [#2751](https://github.com/crytic/slither/pull/2751) - misspelt terms in function doc-strings
+- [`#1705`](https://github.com/crytic/slither/pull/1705) , [`#2751`](https://github.com/crytic/slither/pull/2751) ( *Fix typo's* )
+    - [`#1705`](https://github.com/crytic/slither/pull/1705) - misspelt ```msg.sender``` in the reentrancy-eth module
+    -  [`#2751`](https://github.com/crytic/slither/pull/2751) - misspelt terms in function doc-strings
 
 
 ---
@@ -37,7 +37,7 @@ Adds a function that Un-Register a printer class from the list of printers alrea
     - Adds missing testcases in the contracts and fixes output logs as expected behaviour
 
 - [Enhancement `#1193`](https://github.com/cairo-book/cairo-book/pull/1193)  
- Adds note on multiple derivable traits on structs
+    - Adds note on multiple derivable traits on structs
 
 -  [Enhancement `#1191`](https://github.com/cairo-book/cairo-book/pull/1191) : Tuple Matching Only Supports Enums (`ch06-04`)  
     - Issue: The "Matching Tuples" section implies that all tuple types can be used in match, but tuples with primitive types like (u8, u8) cause a compile-time error.
