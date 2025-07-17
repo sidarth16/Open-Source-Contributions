@@ -32,15 +32,21 @@ Adds a function that Un-Register a printer class from the list of printers alrea
 
 ##  Cairo-Lang Book ([cairo-book](https://github.com/cairo-book/cairo-book))
 
-- [Enhancement #1193](https://github.com/cairo-book/cairo-book/pull/1193)  
+- [Enhancement `#1201`](https://github.com/cairo-book/cairo-book/pull/1191) : Fix test run inconsistencies and output mismatches in (`ch10_01`)
+    - Fixes inconsistencies in test cases sections of `assert!`, `assert_eq!`, `assert_ne!`, `#[should_panic]`, `#[ignore]` Macros and section of : Running Single Tests 
+    - Adds missing testcases in the contracts and fixes output logs as expected behaviour
+
+- [Enhancement `#1193`](https://github.com/cairo-book/cairo-book/pull/1193)  
  Adds note on multiple derivable traits on structs
 
--  [Enhancement #1191](https://github.com/cairo-book/cairo-book/pull/1191)   
-Adds a note under the "Matching Tuples" section to clarify that match on tuples currently supports only enums as tuple members. Removes redundant match arms in quiz questions.
+-  [Enhancement `#1191`](https://github.com/cairo-book/cairo-book/pull/1191) : Tuple Matching Only Supports Enums (`ch06-04`)  
+    - Issue: The "Matching Tuples" section implies that all tuple types can be used in match, but tuples with primitive types like (u8, u8) cause a compile-time error.
 
-- [Issue #1192](https://github.com/cairo-book/cairo-book/pull/1192)  
+    - Fix: Add a note/text clarification that tuple matching currently supports only enums.
+
+- [Issue `#1192`](https://github.com/cairo-book/cairo-book/pull/1192)  
 Rephrase generics example sentence for clarity
 
-- [Issue #1190](https://github.com/cairo-book/cairo-book/pull/1190)  
+- [Issue `#1190`](https://github.com/cairo-book/cairo-book/pull/1190)  
 Fix incorrect usage of function names in quiz.
 
