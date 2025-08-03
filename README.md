@@ -6,6 +6,8 @@
 - [Solderx](https://github.com/sidarth16/SolderX)
     - **SolderX** is a developer-first, all-in-one Solidity flattener that handles files, folders, and verified contracts from various Explorers— all on-the-fly. It features
 robust import resolutions, advanced remapping support, SPDX unification, topological sorting, import deduplication & cyclic dependency detection.
+    -  PyPI link : pypi.org/project/solderx/
+    
 ## Slither ([crytic-slither](https://github.com/crytic/slither))
 
 - [Enhancement `#2753`](https://github.com/crytic/slither/pull/2753)  
