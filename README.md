@@ -38,7 +38,7 @@ Adds a function that Un-Register a printer class from the list of printers alrea
 
 ##  Cairo-Lang Book ([cairo-book](https://github.com/cairo-book/cairo-book))
 
-- [Enhancement `#1201`](https://github.com/cairo-book/cairo-book/pull/1191) : Fix test run inconsistencies and output mismatches in (`ch10_01`)
+- [Enhancement `#1201`](https://github.com/cairo-book/cairo-book/pull/1201) : Fix test run inconsistencies and output mismatches in (`ch10_01`)
     - Fixes inconsistencies in test cases sections of `assert!`, `assert_eq!`, `assert_ne!`, `#[should_panic]`, `#[ignore]` Macros and section of : Running Single Tests 
     - Adds missing testcases in the contracts and fixes output logs as expected behaviour
 
