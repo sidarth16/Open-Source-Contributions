@@ -10,6 +10,7 @@
 
 ---
 
+
 ## Halmos ([a16z-halmos](https://github.com/a16z/halmos))
 - [Enhancement:`#576`](https://github.com/a16z/halmos/pull/576)  
 *(Enhance `div_xy_y` to support signed and unsigned division simplification)*  
@@ -43,6 +44,12 @@ Adds a function that Un-Register a printer class from the list of printers alrea
     -  [`#2751`](https://github.com/crytic/slither/pull/2751) - misspelt terms in function doc-strings
 
 
+---
+
+## Compose ([Perfect Abstractions-Compose](https://github.com/Perfect-Abstractions/Compose))
+- [Fix:`#159`](https://github.com/Perfect-Abstractions/Compose/pull/160)  
+*(`LibERC721Enumerable.sol` now set token owner during mint to resolve missing ownership)*  
+This pull request fixes [#159] — the bug where `LibERC721Enumerable.mint()` did not assign ownership for newly minted tokens. Without this assignment, the token appeared non-existent (`ownerOf[tokenId] == address(0)`), causing transferFrom and burn to revert.
 ---
 
 ##  Cairo-Lang Book ([cairo-book](https://github.com/cairo-book/cairo-book))
