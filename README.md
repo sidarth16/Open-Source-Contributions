@@ -19,6 +19,13 @@ It allows expressions like `(x * y) / x` or `(x * y) / y` to be simplified autom
 ---
 
 ## Slither ([crytic-slither](https://github.com/crytic/slither))
+- [Enhancement:`#2867`](https://github.com/crytic/slither/pull/2867)  
+*(feat: Add detector for `msg.value` usage unreachable from payable entry points*)<br/>
+This PR resolves introduces a new Slither detector, `msg-value-in-nonpayable`, which identifies uses of `msg.value` in functions that can never be reached from any payable public or external entry point.<br/>
+In such cases, `msg.value` is provably meaningless:
+    - it is always zero, or
+    - execution always reverts .
+This detector helps developers catch logic errors, dead code, and incorrect assumptions about ETH flow early.
 
 - [Enhancement:`#2753`](https://github.com/crytic/slither/pull/2753)  
 *(feat: Add Function module to detect functions returning msg.sender directly or via alias*)<br/>
