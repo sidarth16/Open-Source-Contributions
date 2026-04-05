@@ -2,7 +2,7 @@
 
 <!-- A summary of my contributions to notable open-source security tools, with links to pull requests and summary of key improvements. -->
 
-## My PyPI Package
+## PyPI Package
 - [Solderx](https://github.com/sidarth16/SolderX) 
     - **SolderX** is a developer-first, all-in-one Solidity flattener that handles files, folders, and verified contracts from various Explorers— all on-the-fly. 
     - It features robust import resolutions, advanced remapping support, SPDX unification, topological sorting, import deduplication & cyclic dependency detection.
@@ -19,7 +19,16 @@ It allows expressions like `(x * y) / x` or `(x * y) / y` to be simplified autom
 ---
 
 ## Slither ([crytic-slither](https://github.com/crytic/slither))
-- [Enhancement:`#2867`](https://github.com/crytic/slither/pull/2867)  
+- [Enhancement:`#2998`](https://github.com/crytic/slither/pull/2998)
+*(feat: Add RCN Mutator (`require(...)` Condition Negation)
+This PR adds a new mutator: RCN (Require Condition Negation).
+RCN negates the first condition argument of require(...) calls.
+Examples:
+  - `require(x > 0 && x < 10)` -> `require(!(x > 0 && x < 10))`
+  - `require(msg.sender == owner, "not owner")` -> `require(!(msg.sender == owner), "not owner")`
+  - `require(!isOwner, "owner-not-allowed")` -> `require(!(!isOwner), "owner-not-allowed")`
+
+- [Enhancement:`#2867`](https://github.com/crytic/slither/pull/2867)
 *(feat: Add detector for `msg.value` usage unreachable from payable entry points*)<br/>
 This PR resolves introduces a new Slither detector, `msg-value-in-nonpayable`, which identifies uses of `msg.value` in functions that can never be reached from any payable public or external entry point.<br/>
 In such cases, `msg.value` is provably meaningless:
