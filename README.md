@@ -19,8 +19,8 @@ It allows expressions like `(x * y) / x` or `(x * y) / y` to be simplified autom
 ---
 
 ## Slither ([crytic-slither](https://github.com/crytic/slither))
-- [Enhancement:`#2998`](https://github.com/crytic/slither/pull/2998)
-*(feat: Add RCN Mutator (`require(...)` Condition Negation)
+- [Enhancement:`#2998`](https://github.com/crytic/slither/pull/2998) 
+*(feat: Add RCN Mutator (`require(...)` Condition Negation)* <br/>
 This PR adds a new mutator: RCN (Require Condition Negation).
 RCN negates the first condition argument of require(...) calls.
 Examples:
