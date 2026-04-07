@@ -27,6 +27,14 @@ Examples:
   - `require(x > 0 && x < 10)` -> `require(!(x > 0 && x < 10))`
   - `require(msg.sender == owner, "not owner")` -> `require(!(msg.sender == owner), "not owner")`
   - `require(!isOwner, "owner-not-allowed")` -> `require(!(!isOwner), "owner-not-allowed")`
+ 
+- [Enhancement:`#3000`](https://github.com/crytic/slither/pull/2998) 
+*(feat: Add ACN Mutator (`assert(...)` Condition Negation)* <br/>
+The mutator rewrites the first condition argument of `assert(...)` by wrapping it in a negation, so assertion-style guards can be flipped during mutation testing.
+Examples:
+  - `assert(x > 0 && x < 10)` becomes `assert(!(x > 0 && x < 10))`
+  - `assert(msg.sender == owner)` becomes `assert(!(msg.sender == owner))`
+  - `assert(!isOwner)` becomes `assert(!(!isOwner))`
 
 - [Enhancement:`#2867`](https://github.com/crytic/slither/pull/2867)
 *(feat: Add detector for `msg.value` usage unreachable from payable entry points*)<br/>
