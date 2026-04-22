@@ -4,7 +4,9 @@
 
 ## PyPI Package
 - [Cairo-Mutate](https://github.com/sidarth16/cairo-mutate)
-   - in-progress
+   - **cairo-mutate** brings mutation testing to Starknet, giving developers a measurable signal of test quality.
+   - It introduces a proactive security layer for Starknet by injecting controlled faults into Cairo contracts and verifying whether existing test suites can detect them.
+   -  PyPI link : pypi.org/project/cairo-mutate/
   
 - [Solderx](https://github.com/sidarth16/SolderX) 
     - **SolderX** is a developer-first, all-in-one Solidity flattener that handles files, folders, and verified contracts from various Explorers— all on-the-fly. 
