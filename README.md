@@ -3,6 +3,7 @@
 <!-- A summary of my contributions to notable open-source security tools, with links to pull requests and summary of key improvements. -->
 
 ## PyPI Package
+- [Solidity-Mutate](https://github.com/sidarth16/solidity-mutate)
 - [Cairo-Mutate](https://github.com/sidarth16/cairo-mutate)
    - **cairo-mutate** brings mutation testing to Starknet, giving developers a measurable signal of test quality.
    - It introduces a proactive security layer for Starknet by injecting controlled faults into Cairo contracts and verifying whether existing test suites can detect them.
