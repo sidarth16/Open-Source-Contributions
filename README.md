@@ -4,6 +4,9 @@
 
 ## PyPI Package
 - [Solidity-Mutate](https://github.com/sidarth16/solidity-mutate)
+   - Mutation testing for Solidity contracts. Built to expose weak assertions and missing edge cases by checking whether tests fail when contract behaviour changes.
+   -  PyPI link : [pypi.org/project/cairo-mutate](https://pypi.org/project/solidity-mutate/)
+     
 - [Cairo-Mutate](https://github.com/sidarth16/cairo-mutate)
    - **cairo-mutate** brings mutation testing to Starknet, giving developers a measurable signal of test quality.
    - It introduces a proactive security layer for Starknet by injecting controlled faults into Cairo contracts and verifying whether existing test suites can detect them.
